@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{37711AFC-E26F-9058-30F5-520F571A3595}") = "Shape Shifters", "Assembly-CSharp-vs.csproj", "{CF0CBF81-43E6-5819-B51E-B1F1C894CBCC}"
 EndProject
+Project("{37711AFC-E26F-9058-30F5-520F571A3595}") = "Shape Shifters", "Assembly-CSharp-Editor-vs.csproj", "{5297468B-CE4F-2B29-4DD2-602F4365401C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{CF0CBF81-43E6-5819-B51E-B1F1C894CBCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF0CBF81-43E6-5819-B51E-B1F1C894CBCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF0CBF81-43E6-5819-B51E-B1F1C894CBCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5297468B-CE4F-2B29-4DD2-602F4365401C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5297468B-CE4F-2B29-4DD2-602F4365401C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5297468B-CE4F-2B29-4DD2-602F4365401C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5297468B-CE4F-2B29-4DD2-602F4365401C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																															GlobalSection(MonoDevelopProperties) = preSolution
+																																																																		GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
