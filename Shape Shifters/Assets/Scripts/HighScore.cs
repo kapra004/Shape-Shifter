@@ -11,8 +11,7 @@ public class HighScore : MonoBehaviour {
 
 	void Start()
 	{
-		Screen.orientation = ScreenOrientation.LandscapeLeft;
-		GameData.control.highScore = 0;
+		//GameData.control.highScore = 0;
 		GameData.control.Load ();
 		txt.text = "High Score: " + GameData.control.highScore;
 	}

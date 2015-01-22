@@ -14,7 +14,6 @@ public class NextPlane : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
-
 	
 	void FixedUpdate () 
 	{
@@ -32,8 +31,11 @@ public class NextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
-
 				}
 				else
 				{
@@ -79,7 +81,7 @@ public class NextPlane : MonoBehaviour {
 			}
 		}
 		// Next Score Parameter
-		if (Scoring.i > 0 && Scoring.i <= 2)
+		if (Scoring.i > 0 && Scoring.i <= 1)
 		{
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
@@ -91,6 +93,10 @@ public class NextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
 				}
 				else
@@ -120,11 +126,11 @@ public class NextPlane : MonoBehaviour {
 				if (counter == 3) 
 				{
 					newWall = Instantiate (Resources.Load<GameObject> ("TriangleHole"))as GameObject;
-					CheckIfCorrect.checkWall = 3;
+					CheckIfCorrect.checkWall = 2;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
 				newWall.constantForce.force = new Vector3 (0, 0, -18);
-				if (Scoring.currentscore == 3)
+				if (Scoring.currentscore == 2)
 				{
 					newWall.constantForce.force = new Vector3 (0, 0, -20);
 				}
@@ -138,7 +144,7 @@ public class NextPlane : MonoBehaviour {
 			}
 		}
 		// Next Score Parameter
-		if (Scoring.i > 2 && Scoring.i <= 5)
+		if (Scoring.i > 1 && Scoring.i <= 2)
 		{
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
@@ -150,6 +156,10 @@ public class NextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
 				}
 				else
@@ -183,7 +193,7 @@ public class NextPlane : MonoBehaviour {
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
 				newWall.constantForce.force = new Vector3 (0, 0, -20);
-				if (Scoring.currentscore == 6)
+				if (Scoring.currentscore == 3)
 				{
 					newWall.constantForce.force = new Vector3 (0, 0, -22);
 				}
@@ -197,7 +207,7 @@ public class NextPlane : MonoBehaviour {
 			}
 		}
 		// Next Score Parameter
-		if (Scoring.i > 5 && Scoring.i <= 10)
+		if (Scoring.i > 2 && Scoring.i <= 4)
 		{
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
@@ -209,6 +219,10 @@ public class NextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
 				}
 				else
@@ -242,7 +256,7 @@ public class NextPlane : MonoBehaviour {
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
 				newWall.constantForce.force = new Vector3 (0, 0, -22);
-				if (Scoring.currentscore == 11)
+				if (Scoring.currentscore == 5)
 				{
 					newWall.constantForce.force = new Vector3 (0, 0, -28);
 				}
@@ -256,7 +270,7 @@ public class NextPlane : MonoBehaviour {
 			}
 		}
 		// Next Score Parameter
-		if (Scoring.i > 10 && Scoring.i <= 15)
+		if (Scoring.i > 4 && Scoring.i <= 8)
 		{
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
@@ -268,6 +282,10 @@ public class NextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
 				}
 				else
@@ -301,7 +319,7 @@ public class NextPlane : MonoBehaviour {
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
 				newWall.constantForce.force = new Vector3 (0, 0, -28);
-				if (Scoring.currentscore == 16)
+				if (Scoring.currentscore == 9)
 				{
 					newWall.transform.position = new Vector3 (0, 0, 80);
 					newWall.constantForce.force = new Vector3 (0, 0, -40);
@@ -316,7 +334,7 @@ public class NextPlane : MonoBehaviour {
 			}
 		}
 		// Next Score Parameter
-		if (Scoring.i > 15 && Scoring.i <= 20)
+		if (Scoring.i > 8 && Scoring.i <= 15)
 		{
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
@@ -328,6 +346,10 @@ public class NextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
 				}
 				else
@@ -361,7 +383,7 @@ public class NextPlane : MonoBehaviour {
 				}
 				newWall.transform.position = new Vector3 (0, 0, 80);
 				newWall.constantForce.force = new Vector3 (0, 0, -40);
-				if (Scoring.currentscore == 21)
+				if (Scoring.currentscore == 16)
 				{
 					newWall.transform.position = new Vector3 (0, 0, 70);
 					newWall.constantForce.force = new Vector3 (0, 0, -45);
@@ -376,13 +398,17 @@ public class NextPlane : MonoBehaviour {
 			}
 		}
 		// Next Score Parameter
-		if (Scoring.i > 20 && Scoring.i <= 25)
+		if (Scoring.i > 15 && Scoring.i <= 20)
 		{
 			// Check if Correct and Add Score
 			if (gameObject.transform.position.z < 10.5 && gameObject.transform.position.z > 10.0)
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
 				}
 				else
@@ -411,7 +437,7 @@ public class NextPlane : MonoBehaviour {
 				}
 				newWall.transform.position = new Vector3 (0, 0, 70);
 				newWall.constantForce.force = new Vector3 (0, 0, -45);
-				if (Scoring.currentscore == 26)
+				if (Scoring.currentscore == 21)
 				{
 					newWall.transform.position = new Vector3 (0, 0, 60);
 					newWall.constantForce.force = new Vector3 (0, 0, -50);
@@ -426,13 +452,17 @@ public class NextPlane : MonoBehaviour {
 			}
 		}
 		// Next Score Parameter
-		if (Scoring.i > 25 && Scoring.i <= 30)
+		if (Scoring.i > 20 && Scoring.i <= 25)
 		{
 			// Check if Correct and Add Score
 			if (gameObject.transform.position.z < 10.5 && gameObject.transform.position.z > 10.0)
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
 				}
 				else
@@ -461,7 +491,7 @@ public class NextPlane : MonoBehaviour {
 				}
 				newWall.transform.position = new Vector3 (0, 0, 60);
 				newWall.constantForce.force = new Vector3 (0, 0, -50);
-				if (Scoring.currentscore == 31)
+				if (Scoring.currentscore == 26)
 				{
 					newWall.transform.position = new Vector3 (0, 0, 50);
 					newWall.constantForce.force = new Vector3 (0, 0, -60);
@@ -476,13 +506,17 @@ public class NextPlane : MonoBehaviour {
 			}
 		}
 		// Next Score Parameter
-		if (Scoring.i > 30 && Scoring.i <= 40)
+		if (Scoring.i > 25 && Scoring.i <= 40)
 		{
 			// Check if Correct and Add Score
 			if (gameObject.transform.position.z < 10.5 && gameObject.transform.position.z > 10.0)
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
 				}
 				else
@@ -533,6 +567,10 @@ public class NextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
+					if(Scoring.currentscore == GameData.control.highScore)
+					{
+						GameData.control.Save ();
+					}
 					Application.LoadLevel("Game Over");
 				}
 				else
