@@ -89,7 +89,7 @@ public class NextPlane : MonoBehaviour {
 				gameObject.rigidbody.drag = 5;		
 			}
 			// Check if Correct and Add Score
-			if (gameObject.transform.position.z < 10.0 && gameObject.transform.position.z > 9.90)
+			if (gameObject.transform.position.z < 9.98 && gameObject.transform.position.z > 9.85)
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
