@@ -152,6 +152,7 @@
      <Compile Include="Assets\Scripts\EasyPlayGame.cs" />
      <Compile Include="Assets\Scripts\GameData.cs" />
      <Compile Include="Assets\Scripts\HighScore.cs" />
+     <Compile Include="Assets\Scripts\LoadHome.cs" />
      <Compile Include="Assets\Scripts\MakeCircle.cs" />
      <Compile Include="Assets\Scripts\MakeSquare.cs" />
      <Compile Include="Assets\Scripts\MakeTriangle.cs" />
