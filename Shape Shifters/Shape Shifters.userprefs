@@ -1,19 +1,21 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MakeParallelogram.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HardStartWall.cs">
     <Files>
-      <File FileName="Assets\Scripts\MakeCircle.cs" Line="9" Column="81" />
-      <File FileName="Assets\Scripts\SwitchCanvas.cs" Line="19" Column="31" />
+      <File FileName="Assets\Scripts\MediumStartWall.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\MakeCircle.cs" Line="18" Column="1" />
       <File FileName="Assets\Scripts\EasyPlayGame.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\NextPlane.cs" Line="10" Column="21" />
-      <File FileName="Assets\Scripts\MakeParallelogram.cs" Line="14" Column="3" />
-      <File FileName="Assets\Scripts\MakeSquare.cs" Line="9" Column="81" />
-      <File FileName="Assets\Scripts\MakeTriangle.cs" Line="10" Column="82" />
+      <File FileName="Assets\Scripts\NextPlane.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MakeParallelogram.cs" Line="10" Column="76" />
+      <File FileName="Assets\Scripts\MakeSquare.cs" Line="10" Column="76" />
+      <File FileName="Assets\Scripts\MakeTriangle.cs" Line="11" Column="76" />
       <File FileName="Assets\Scripts\MediumNextPlane.cs" Line="569" Column="73" />
-      <File FileName="Assets\Scripts\MediumStartWall.cs" Line="28" Column="72" />
-      <File FileName="Assets\Scripts\StartWall.cs" Line="5" Column="1" />
-      <File FileName="Assets\Scripts\ChooseDifficulty.cs" Line="10" Column="2" />
-      <File FileName="Assets\Scripts\LoadDifficulty.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\HardNextPlane.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HardPlayGame.cs" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\HardStartWall.cs" Line="39" Column="33" />
+      <File FileName="Assets\Scripts\MakeTrapezoid.cs" Line="14" Column="33" />
+      <File FileName="Assets\Scripts\MediumPlayGame.cs" Line="7" Column="2" />
+      <File FileName="Assets\Scripts\MakeOctagon.cs" Line="8" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

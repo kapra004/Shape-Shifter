@@ -24,7 +24,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
 			{
-				gameObject.rigidbody.drag = 5;		
+				gameObject.GetComponent<Rigidbody>().drag = 5;		
 			}
 			// Check if Correct and Add Score
 			if (gameObject.transform.position.z < 10.02 && gameObject.transform.position.z > 9.97)
@@ -46,7 +46,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Remove Drag
 			if (gameObject.transform.position.z < 8) 
 			{
-				gameObject.rigidbody.drag = 0;
+				gameObject.GetComponent<Rigidbody>().drag = 0;
 			}
 			// Create New Wall
 			if (gameObject.transform.position.z < 1.65 && gameObject.transform.position.z > 1.55) 
@@ -73,10 +73,10 @@ public class MediumNextPlane : MonoBehaviour {
 				}
 				if (Scoring.currentscore == 1)
 				{
-					newWall.constantForce.force = new Vector3 (0, 0, -18);
+					newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -18);
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
@@ -91,7 +91,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
 			{
-				gameObject.rigidbody.drag = 5;		
+				gameObject.GetComponent<Rigidbody>().drag = 5;		
 			}
 			// Check if Correct and Add Score
 			if (gameObject.transform.position.z < 9.98 && gameObject.transform.position.z > 9.85)
@@ -113,7 +113,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Remove Drag
 			if (gameObject.transform.position.z < 8) 
 			{
-				gameObject.rigidbody.drag = 0;
+				gameObject.GetComponent<Rigidbody>().drag = 0;
 			}
 			// Create New Wall
 			if (gameObject.transform.position.z < 3.20 && gameObject.transform.position.z > 3.00) 
@@ -139,12 +139,12 @@ public class MediumNextPlane : MonoBehaviour {
 					CheckIfCorrect.checkWall = 4;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
-				newWall.constantForce.force = new Vector3 (0, 0, -18);
+				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -18);
 				if (Scoring.currentscore == 2)
 				{
-					newWall.constantForce.force = new Vector3 (0, 0, -20);
+					newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -20);
 				}
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
@@ -159,7 +159,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
 			{
-				gameObject.rigidbody.drag = 5;		
+				gameObject.GetComponent<Rigidbody>().drag = 5;		
 			}
 			// Check if Correct and Add Score
 			if (gameObject.transform.position.z < 10.0 && gameObject.transform.position.z > 9.90)
@@ -181,7 +181,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Remove Drag
 			if (gameObject.transform.position.z < 8) 
 			{
-				gameObject.rigidbody.drag = 0;
+				gameObject.GetComponent<Rigidbody>().drag = 0;
 			}
 			// Create New Wall
 			if (gameObject.transform.position.z < 10.0 && gameObject.transform.position.z > 9.90) 
@@ -207,12 +207,12 @@ public class MediumNextPlane : MonoBehaviour {
 					CheckIfCorrect.checkWall = 4;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
-				newWall.constantForce.force = new Vector3 (0, 0, -20);
+				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -20);
 				if (Scoring.currentscore == 3)
 				{
-					newWall.constantForce.force = new Vector3 (0, 0, -22);
+					newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -22);
 				}
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
@@ -227,7 +227,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
 			{
-				gameObject.rigidbody.drag = 5;		
+				gameObject.GetComponent<Rigidbody>().drag = 5;		
 			}
 			// Check if Correct and Add Score
 			if (gameObject.transform.position.z < 10.2 && gameObject.transform.position.z > 9.90)
@@ -249,7 +249,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Remove Drag
 			if (gameObject.transform.position.z < 8) 
 			{
-				gameObject.rigidbody.drag = 0;
+				gameObject.GetComponent<Rigidbody>().drag = 0;
 			}
 			// Create New Wall
 			if (gameObject.transform.position.z < 10.2 && gameObject.transform.position.z > 9.90) 
@@ -275,12 +275,12 @@ public class MediumNextPlane : MonoBehaviour {
 					CheckIfCorrect.checkWall = 4;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
-				newWall.constantForce.force = new Vector3 (0, 0, -22);
+				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -22);
 				if (Scoring.currentscore == 5)
 				{
-					newWall.constantForce.force = new Vector3 (0, 0, -28);
+					newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -28);
 				}
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
@@ -295,7 +295,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
 			{
-				gameObject.rigidbody.drag = 5;		
+				gameObject.GetComponent<Rigidbody>().drag = 5;		
 			}
 			// Check if Correct and Add Score
 			if (gameObject.transform.position.z < 10.0 && gameObject.transform.position.z > 9.80)
@@ -317,7 +317,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Remove Drag
 			if (gameObject.transform.position.z < 8) 
 			{
-				gameObject.rigidbody.drag = 0;
+				gameObject.GetComponent<Rigidbody>().drag = 0;
 			}
 			// Create New Wall
 			if (gameObject.transform.position.z < 10.0 && gameObject.transform.position.z > 9.80) 
@@ -343,13 +343,13 @@ public class MediumNextPlane : MonoBehaviour {
 					CheckIfCorrect.checkWall = 4;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
-				newWall.constantForce.force = new Vector3 (0, 0, -28);
+				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -28);
 				if (Scoring.currentscore == 9)
 				{
 					newWall.transform.position = new Vector3 (0, 0, 80);
-					newWall.constantForce.force = new Vector3 (0, 0, -40);
+					newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -40);
 				}
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
@@ -364,7 +364,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Add Drag
 			if (gameObject.transform.position.z < 20) 
 			{
-				gameObject.rigidbody.drag = 5;		
+				gameObject.GetComponent<Rigidbody>().drag = 5;		
 			}
 			// Check if Correct and Add Score
 			if (gameObject.transform.position.z < 10.0 && gameObject.transform.position.z > 9.80)
@@ -386,7 +386,7 @@ public class MediumNextPlane : MonoBehaviour {
 			// Remove Drag
 			if (gameObject.transform.position.z < 8) 
 			{
-				gameObject.rigidbody.drag = 0;
+				gameObject.GetComponent<Rigidbody>().drag = 0;
 			}
 			// Create New Wall
 			if (gameObject.transform.position.z < 10.1 && gameObject.transform.position.z > 9.80) 
@@ -412,13 +412,13 @@ public class MediumNextPlane : MonoBehaviour {
 					CheckIfCorrect.checkWall = 4;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 80);
-				newWall.constantForce.force = new Vector3 (0, 0, -40);
+				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -40);
 				if (Scoring.currentscore == 16)
 				{
 					newWall.transform.position = new Vector3 (0, 0, 70);
-					newWall.constantForce.force = new Vector3 (0, 0, -45);
+					newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -45);
 				}
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
@@ -471,13 +471,13 @@ public class MediumNextPlane : MonoBehaviour {
 					CheckIfCorrect.checkWall = 4;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 70);
-				newWall.constantForce.force = new Vector3 (0, 0, -45);
+				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -45);
 				if (Scoring.currentscore == 21)
 				{
 					newWall.transform.position = new Vector3 (0, 0, 60);
-					newWall.constantForce.force = new Vector3 (0, 0, -50);
+					newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -50);
 				}
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
@@ -530,13 +530,13 @@ public class MediumNextPlane : MonoBehaviour {
 					CheckIfCorrect.checkWall = 4;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 60);
-				newWall.constantForce.force = new Vector3 (0, 0, -50);
+				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -50);
 				if (Scoring.currentscore == 26)
 				{
 					newWall.transform.position = new Vector3 (0, 0, 50);
-					newWall.constantForce.force = new Vector3 (0, 0, -60);
+					newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -60);
 				}
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
@@ -589,13 +589,13 @@ public class MediumNextPlane : MonoBehaviour {
 					CheckIfCorrect.checkWall = 4;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 50);
-				newWall.constantForce.force = new Vector3 (0, 0, -60);
+				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -60);
 				if (Scoring.currentscore == 41)
 				{
 					newWall.transform.position = new Vector3 (0, 0, 40);
-					newWall.constantForce.force = new Vector3 (0, 0, -75);
+					newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -75);
 				}
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
@@ -648,8 +648,8 @@ public class MediumNextPlane : MonoBehaviour {
 					CheckIfCorrect.checkWall = 4;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 40);
-				newWall.constantForce.force = new Vector3 (0, 0, -75);
-				newWall.rigidbody.drag = 0;
+				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -75);
+				newWall.GetComponent<Rigidbody>().drag = 0;
 				newWall.name = "Wall";
 			}
 			// Delete Current Wall and Increment i
