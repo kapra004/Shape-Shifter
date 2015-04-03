@@ -16,9 +16,9 @@ public static class GPGSPostBuild {
 
     [PostProcessBuild]
     public static void OnPostprocessBuild(BuildTarget target, string pathToBuiltProject) {
-        if (target != BuildTarget.iOS) {
-            return;
-        }
+        //if (target != BuildTarget.iOS) {
+        //    return;
+        //}
 
         if (GetBundleId() == null) {
             UnityEngine.Debug.LogError("The iOS bundle ID has not been set up through the " +

@@ -11,7 +11,6 @@ public class HighScore : MonoBehaviour {
 
 	void Start()
 	{
-		//GameData.control.highScore = 0;
 		GameData.control.Load ();
 		txt.text = "High Score: " + GameData.control.highScore;
 	}

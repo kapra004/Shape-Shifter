@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class MakeTriangle : MonoBehaviour {
-	
-	MeshRenderer newShape;
 
 	public void makeTriangle () 
 	{

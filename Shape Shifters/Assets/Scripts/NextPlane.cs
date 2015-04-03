@@ -126,7 +126,7 @@ public class NextPlane : MonoBehaviour {
 				if (counter == 3) 
 				{
 					newWall = Instantiate (Resources.Load<GameObject> ("TriangleHole"))as GameObject;
-					CheckIfCorrect.checkWall = 2;
+					CheckIfCorrect.checkWall = 3;
 				}
 				newWall.transform.position = new Vector3 (0, 0, 100);
 				newWall.GetComponent<ConstantForce>().force = new Vector3 (0, 0, -18);

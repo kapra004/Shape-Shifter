@@ -31,9 +31,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
@@ -98,9 +98,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
@@ -166,9 +166,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
@@ -234,9 +234,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
@@ -302,9 +302,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
@@ -371,9 +371,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
@@ -435,9 +435,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
@@ -494,9 +494,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
@@ -553,9 +553,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
@@ -612,9 +612,9 @@ public class MediumNextPlane : MonoBehaviour {
 			{
 				if (CheckIfCorrect.checkWall != CheckIfCorrect.checkShape)
 				{
-					if(Scoring.currentscore == GameData.control.highScore)
+					if(Scoring.currentscore == GameData.control.medHighScore)
 					{
-						GameData.control.Save ();
+						GameData.control.medSave ();
 					}
 					Application.LoadLevel("Game Over");
 				}
