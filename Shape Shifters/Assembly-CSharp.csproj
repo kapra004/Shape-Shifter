@@ -149,8 +149,10 @@
      <Compile Include="Assets\Scripts\CheckIfCorrect.cs" />
      <Compile Include="Assets\Scripts\ChooseDifficulty.cs" />
      <Compile Include="Assets\Scripts\DisplayScore.cs" />
+     <Compile Include="Assets\Scripts\EasyBestScore.cs" />
      <Compile Include="Assets\Scripts\EasyPlayGame.cs" />
      <Compile Include="Assets\Scripts\GameData.cs" />
+     <Compile Include="Assets\Scripts\HardBestScore.cs" />
      <Compile Include="Assets\Scripts\HardHighScore.cs" />
      <Compile Include="Assets\Scripts\HardNextPlane.cs" />
      <Compile Include="Assets\Scripts\HardPlayGame.cs" />
@@ -164,6 +166,7 @@
      <Compile Include="Assets\Scripts\MakeSquare.cs" />
      <Compile Include="Assets\Scripts\MakeTrapezoid.cs" />
      <Compile Include="Assets\Scripts\MakeTriangle.cs" />
+     <Compile Include="Assets\Scripts\MediumBestScore.cs" />
      <Compile Include="Assets\Scripts\MediumHighScore.cs" />
      <Compile Include="Assets\Scripts\MediumNextPlane.cs" />
      <Compile Include="Assets\Scripts\MediumPlayGame.cs" />

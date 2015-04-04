@@ -28,7 +28,6 @@ public class GameData : MonoBehaviour {
 		
 		PlayerData  data = new PlayerData();
 		data.highScore = highScore;
-
 		bf.Serialize(file,data);
 		file.Close();
 	}
@@ -40,6 +39,8 @@ public class GameData : MonoBehaviour {
 			FileStream file = File.Open(Application.persistentDataPath + "/myPlayerInfo.dat",FileMode.Open);
 			PlayerData data = (PlayerData)bf.Deserialize(file);
 			highScore = data.highScore;
+
+
 		}	
 	}
 	public void medSave ()
