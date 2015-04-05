@@ -4,11 +4,10 @@ using UnityEngine.UI;
 
 public class DisplayScore : MonoBehaviour {
 
-	Text txt;
+	public Text txt;
 
 	void Start () 
 	{
-		txt = gameObject.GetComponentInChildren<Text> ();
 		txt.text = "Your Score: " + Scoring.currentscore;
 	}
 }
